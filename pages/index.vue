@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <font-awesome-icon icon="home" />
     <nuxt-link to="/pourover/">COFFEE POUR OVER</nuxt-link>
   </div>
 </template>
