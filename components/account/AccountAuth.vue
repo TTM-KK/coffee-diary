@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <div class="login__box">
     <div v-if="isAuthenticated">
       {{ user.email }}でログイン中です<br />
       <button v-on:click="logout">ログアウト</button><br />
     </div>
     <div v-else>
-      メール<br />
+      <div class="login__text">Mail</div>
       <input type="text" v-model="email" /><br />
-      パスワード<br />
+      <div class="login__text mt-2">Pass</div>
       <input type="password" v-model="password" /><br />
-      <button v-on:click="login">ログイン</button>
+      <div class="text-right">
+        <button v-on:click="login" class="mt-4">LOGIN</button>
+      </div>
     </div>
   </div>
 </template>
@@ -62,3 +64,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.login__box {
+  width: 200px;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.login__text {
+  text-align: left;
+}
+</style>

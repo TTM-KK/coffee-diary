@@ -1,9 +1,13 @@
 <template>
   <div class="container">
-    <font-awesome-icon icon="home" />
-    <nuxt-link to="/pourover/">COFFEE POUR OVER</nuxt-link>
-    <div>
-      <account-auth></account-auth>
+    <div class="control_box">
+      <div class="">
+        <font-awesome-icon icon="home" />
+        <nuxt-link to="/pourover/">COFFEE POUR OVER</nuxt-link>
+      </div>
+      <div class="login_box">
+        <account-auth></account-auth>
+      </div>
     </div>
   </div>
 </template>
@@ -15,14 +19,23 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center; */
+}
+
+.control_box {
   text-align: center;
+  padding-top: 100px;
+}
+
+.login_box {
+  margin-top: 100px;
 }
 
 .title {
