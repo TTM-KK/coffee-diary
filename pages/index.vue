@@ -2,11 +2,17 @@
   <div class="container">
     <font-awesome-icon icon="home" />
     <nuxt-link to="/pourover/">COFFEE POUR OVER</nuxt-link>
+    <div>
+      <account-auth></account-auth>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import AccountAuth from "~/components/account/AccountAuth.vue";
+export default {
+  components: { AccountAuth },
+};
 </script>
 
 <style>

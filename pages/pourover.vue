@@ -24,13 +24,16 @@
 </template>
 
 <script>
-import stopWatch from "~/components/pourover/stopWatch";
+import stopWatch from "~/components/pourover/StopWatch";
+// import LoginOnly from "~/components/account/LoginOnly.vue";
 export default {
+  middleware: "login-user-only",
   data() {
     return {
       temprature: "",
       waterAmount: "",
       beans: "",
+      roaster: "",
     };
   },
 };
