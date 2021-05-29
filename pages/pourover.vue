@@ -24,8 +24,7 @@
 </template>
 
 <script>
-import StopWatch from "~/components/pourover/StopWatch.vue";
-// import LoginOnly from "~/components/account/LoginOnly.vue";
+import StopWatch from "~/components/pourover/StopWatch";
 export default {
   components: { StopWatch },
   middleware: "login-user-only",
