@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import StopWatch from "~/components/pourover/StopWatch";
+import StopWatch from "~/components/PourOver/StopWatch";
 export default {
   components: { StopWatch },
   middleware: "login-user-only",
