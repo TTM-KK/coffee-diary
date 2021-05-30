@@ -3,10 +3,14 @@
     <div class="control_box">
       <div class="">
         <font-awesome-icon icon="home" />
-        <nuxt-link to="/pourover/">COFFEE POUR OVER</nuxt-link>
+        <nuxt-link to="/pourover/">COFFEE POUR OVER</nuxt-link><br />
+        <nuxt-link to="">抽出記録を表示</nuxt-link>
       </div>
       <div class="login_box">
         <account-auth></account-auth>
+      </div>
+      <div class="data_box">
+        <display-pour-over-data> </display-pour-over-data>
       </div>
     </div>
   </div>
@@ -14,8 +18,9 @@
 
 <script>
 import AccountAuth from "~/components/account/AccountAuth.vue";
+import DisplayPourOverData from "../components/PourOver/DisplayPourOverData.vue";
 export default {
-  components: { AccountAuth },
+  components: { AccountAuth, DisplayPourOverData },
 };
 </script>
 
@@ -35,6 +40,10 @@ export default {
 }
 
 .login_box {
+  margin-top: 100px;
+}
+
+.data_box {
   margin-top: 100px;
 }
 

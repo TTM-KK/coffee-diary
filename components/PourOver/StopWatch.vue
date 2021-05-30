@@ -27,13 +27,19 @@
 
 <script>
 export default {
+  props: {
+    // lapsのデータはpourover.vueコンポーネントにてfirestoreに登録したいため、propsとして親で監視できるようにしている。
+    laps: {
+      type: Array,
+      required: true,
+    },
+  },
   data() {
     return {
       hours: 0,
       minutes: 0,
       second: 0,
       milisecond: 0,
-      laps: [],
 
       startTime: 0,
       endTime: 0,
