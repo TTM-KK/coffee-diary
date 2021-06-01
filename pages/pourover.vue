@@ -55,7 +55,7 @@ export default {
           extruction_time: this.laps,
           roaster: this.roaster,
           temprature: this.temprature,
-          waterAmount: this.waterAmount,
+          water_amount: this.waterAmount,
           comment: this.comment,
           user_uid: firebase.auth().currentUser.uid,
         })
