@@ -23,7 +23,7 @@
         <span class="data__detail">{{ data.water_amount }}</span>
       </div>
       <div>
-        <!--  合計時間も表示する -->
+        <!-- 合計時間も表示するtesttest -->
         Times
         <br />
         <span class="data__detail">
